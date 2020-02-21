@@ -86,11 +86,9 @@ app.get('/products',(req,res) => {
         products: []
     })
 })
-
 //  app.com
 //  app.com/help
 //  app.com/about
-
 app.get('/help/*',(req,res) => {
     res.render('404error',{
         errorMessage :'Help Article not Found',
